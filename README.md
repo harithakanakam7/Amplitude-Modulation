@@ -99,7 +99,7 @@ MODEL GRAPH:
 
 TABULATION:
 
-<img width="855" height="1600" alt="image" src="https://github.com/user-attachments/assets/a866b2e6-4127-4b99-8032-875fc9855737" />
+<img width="1600" height="1052" alt="WhatsApp Image 2026-04-24 at 3 10 06 PM" src="https://github.com/user-attachments/assets/4b31635e-0bd8-4b87-bf47-859b06f5d286" />
 
 
 Calculation:
