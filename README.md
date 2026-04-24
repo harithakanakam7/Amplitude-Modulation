@@ -74,29 +74,44 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 •	If any Error, correct it in code and execute again
 •	Verify the generated waveform using Tabulation and Model Waveform
 
-Program
+Program:
+```
+Am=8;
+fm=1531;
+Ac=15.2;
+fc=15310;
+fs=153100;
+t=0:1/fs:2/fm;
+em=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,em);
+ec=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,ec);
+eam=(Ac+em).*cos(2*3.14*fc*t);
+subplot(3,1,3);
+plot(t,eam);
 
+```
+MODEL GRAPH:
 
-
-Output Waveform
-
-
-
-
+ <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
 
 TABULATION:
 
+<img width="855" height="1600" alt="image" src="https://github.com/user-attachments/assets/a866b2e6-4127-4b99-8032-875fc9855737" />
 
 
-Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
+Calculation:
+```
+1.ma (Theory) = am/ac = 0.5263.
+2.ma(Practical) = (Emax-Emin)/(Emax+Emin) = 0.540.
+```
 
+Output Waveform:
 
-MODEL GRAPH
- <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
+ <img width="1920" height="1140" alt="image" src="https://github.com/user-attachments/assets/623868cf-049c-4d2e-b075-f8ed02e07e06" />
 
- 
  
 
 
